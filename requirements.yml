@@ -16,3 +16,4 @@ dependencies:
     - chex
     - rlax
     - flax
+    - git+https://github.com/epignatelli/helx#egg=helx
