@@ -118,9 +118,9 @@ class MiniHackDownhill15x15(MiniHackDownhill):
 
 gym.register(
     id="MiniHack-Downhill-5x5-v0",
-    entry_point="experiments.envs.downhill:MiniHackDownhill5x5",
+    entry_point="trust.environments.downhill:MiniHackDownhill5x5",
 )
 gym.register(
     id="MiniHack-Downhill-15x15-v0",
-    entry_point="experiments.envs.downhill:MiniHackDownhill15x15",
+    entry_point="trust.environments.downhill:MiniHackDownhill15x15",
 )
