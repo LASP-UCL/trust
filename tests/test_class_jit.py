@@ -103,11 +103,6 @@ def test_hparams_mutability_after_jit():
     assert jax.numpy.array_equal(y, 3 / 2 * x)
     print(y)
 
-    bar_j = BarJ(properties)
-    y = bar_j.update(x)
-    assert jax.numpy.array_equal(y, 3 / 2 * x)
-    print(y)
-
 
 def test_print_jitted():
     def loss(x, y, z):
