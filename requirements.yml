@@ -1,4 +1,4 @@
-name: ca_survey
+name: trust
 
 dependencies:
   - python=3.9
