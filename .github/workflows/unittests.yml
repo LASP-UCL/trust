@@ -25,4 +25,4 @@ jobs:
         $CONDA/bin/pip install -e .
     - name: Test with pytest
       run: |
-        $CONDA/bin/pytest
+        $CONDA/envs/trust/bin/pytest
