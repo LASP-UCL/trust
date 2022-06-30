@@ -2,7 +2,7 @@ from trust.environments.downhill import MinihackToDMEnv
 import gym
 
 
-def downhill_test():
+def test_downhill():
     ENV = "MiniHack-Downhill-5x5-v0"
     env = gym.make(ENV)
     env = MinihackToDMEnv(env)

@@ -11,7 +11,7 @@ config.update("jax_log_compiles", 1)
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "0"
 
 
-def biascorrection_recompilation_test():
+def test_biascorrection_recompilation():
     class M(nn.Module):
         @nn.compact
         def __call__(self, x):

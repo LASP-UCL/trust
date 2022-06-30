@@ -9,7 +9,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "DEBUG"
 config.update("jax_log_compiles", 1)
 
 
-def jit_instancemethod_recompile_test():
+def test_jit_instancemethod_recompile():
     jax.log_compiles(True)
 
     class Foo:
@@ -66,7 +66,7 @@ def jit_instancemethod_recompile_test():
     return
 
 
-def hparams_mutability_after_jit_test():
+def test_hparams_mutability_after_jit():
     class Properties(NamedTuple):
         a: int
         b: int
