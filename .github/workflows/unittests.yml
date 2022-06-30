@@ -17,12 +17,10 @@ jobs:
     - name: Install dependencies
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
-        # install python
-        $CONDA/bin/conda install python=3.9
-        # install environment
+        # reproduce environment
         $CONDA/bin/conda env create -f requirements.yml
         # install trust
-        $CONDA/bin/pip install -e .
+        $CONDA/envs/trust/bin/pip install -e .
     - name: Test with pytest
       run: |
         $CONDA/envs/trust/bin/pytest
